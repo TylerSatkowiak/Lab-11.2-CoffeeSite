@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register New Account</h2>
+
+
+<form action="/Home/Submit">
+
+    Personal Information:
+    <br />
+    <br />
+    <strong>First Name:</strong> <input type="text" name="firstname" minlength="2" required/>
+    <br />
+    <br />
+    Middle Name: <input type="text" name="middlename" />
+    <br />
+    <br />
+    <strong>Last Name:</strong> <input type="text" name="lastname" minlength="2" required/>
+    <br />
+    <br />
+
+
+    <label class="container">
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br />
+
+    </label>
+
+
+    Account Information:
+    <br />
+    <br />
+    <div>
+        <label for="username">Username (min. 8):</label>
+        <input type="text" id="username" name="username" minlength="8" required>
+        <br />
+        <strong>Email Address:</strong> <input type="text" name="email" />
+    </div>
+    
+    
+    <br />
+    <div>
+    <label for="pass">Password (min. 8):</label>
+    <input type="password" id="pass" name="password"
+           minlength="8" required>
+    </div>
+    <br />
+    <input type="submit" value="Submit" />
+
+    <!--  Not sure how to link Submit button to continue to landing page.-->
+
+</form>
